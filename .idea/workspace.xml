@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18808741-458a-4ff6-aa2c-893bd3f2b485" name="Changes" comment="got firebase auth/firestore working">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="18808741-458a-4ff6-aa2c-893bd3f2b485" name="Changes" comment="add api to gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <workItem from="1646616479185" duration="32000" />
       <workItem from="1646616525522" duration="1278000" />
       <workItem from="1646619292512" duration="3325000" />
-      <workItem from="1646683070997" duration="10975000" />
+      <workItem from="1646683070997" duration="13238000" />
     </task>
     <task id="LOCAL-00001" summary="got firebase auth/firestore working">
       <created>1646706081988</created>
@@ -59,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646706081988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add api to gitignore">
+      <created>1646706208857</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646706208857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -85,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="got firebase auth/firestore working" />
-    <option name="LAST_COMMIT_MESSAGE" value="got firebase auth/firestore working" />
+    <MESSAGE value="add api to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api to gitignore" />
   </component>
 </project>
