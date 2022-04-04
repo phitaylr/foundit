@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:foundit/screens/admin.dart';
 import 'package:foundit/screens/homescreen.dart';
+import 'package:foundit/screens/search.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 
@@ -19,12 +20,13 @@ void main() async {
 }
 
 class FoundItApp extends StatelessWidget {
-  const FoundItApp({Key? key}) : super(key: key);
+   const FoundItApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'TVS Found It',
       theme: ThemeData(),initialRoute: '/',
       routes: {
@@ -32,6 +34,7 @@ class FoundItApp extends StatelessWidget {
         '/': (context) => const FoundItHomePage(title: 'Found It!'),
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/admin': (context) => const AdminScreen(),
+        '/search': (context) => const SearchPage(),
       },
     );
   }

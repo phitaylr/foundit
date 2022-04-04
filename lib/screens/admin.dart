@@ -22,6 +22,14 @@ class _AdminScreenState extends State<AdminScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Admin'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          tooltip: 'Back to home screen',
+          onPressed: (){
+            Navigator.pop(context);
+            Navigator.pushNamed(context, '/');
+          }
+          ),
       ),
       body: FirebaseAuth.instance.currentUser == null ? LoginButton(updateState: reloadUser,) : Text('logged in'),
       );
