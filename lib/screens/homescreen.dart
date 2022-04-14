@@ -67,22 +67,16 @@ class _FoundItHomePageState extends State<FoundItHomePage> {
              ),
           ],
           ),
-    );
+       body: Center(
+         child: Column(
+         mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Expanded(
+                 child: ItemInformation(),
+              )
+            ],
+          ),
+        ),
+     );
    }
  }
-
-//uncommenting stops here
-       //drawer: SideBarMenu(),
-       //body: Center(
-         //child: Column(
-         // mainAxisAlignment: MainAxisAlignment.center,
-         //   children: <Widget>[
-         //      Expanded(
-         //        child: ItemInformation(),
-        //      )
-       //    ],
-      //   ),
-    //   ),
-   //  );
-  // }
- //}
