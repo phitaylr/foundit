@@ -21,6 +21,7 @@ class SearchPage extends StatefulWidget{
 
 class _SearchPage extends State<SearchPage> {
   final fieldText = TextEditingController();
+
 @override
   Widget build(BuildContext context) {
 
@@ -38,6 +39,7 @@ class _SearchPage extends State<SearchPage> {
           }
           ),
       ),
+<<<<<<< Updated upstream
         body: Column(
         children: <Widget>[
           ListTile(
@@ -80,6 +82,100 @@ class _SearchPage extends State<SearchPage> {
     ); 
         
         
+=======
+       body: Center(
+         child: Column(
+         mainAxisAlignment: MainAxisAlignment.center,
+         
+            children: <Widget>[
+              Padding(
+               padding: const EdgeInsets.all(20.0),
+               child: TextField(
+                controller: fieldText,
+                 decoration: InputDecoration(
+                   contentPadding: const EdgeInsets.symmetric(
+                     vertical: 15.0
+                   ),
+                   fillColor: Colors.white,
+                   filled: true,
+                   border: OutlineInputBorder(
+                     borderRadius: BorderRadius.circular(30.0),
+                     borderSide: const BorderSide(width: 0.8)
+                   ),
+                   enabledBorder: OutlineInputBorder(
+                     borderRadius: BorderRadius.circular(30.0),
+                     borderSide: BorderSide(width: 0.8, color: Theme.of(context).backgroundColor)
+                   ),
+                  
+                   hintText: "Search for a lost item",
+                 prefixIcon: const Icon(Icons.search, size: 30,),
+                suffixIcon: IconButton(icon: const Icon(Icons.clear), onPressed: (){
+                   fieldText.clear();
+                 })
+               ),
+               ),
+              ),
+              Expanded(
+                child: ListView(
+                  padding: const EdgeInsets.all(8.0),
+                 scrollDirection: Axis.horizontal,
+                 children: const [
+                   Text('type'),
+               ],
+               ),
+         ),
+              
+              Expanded(
+                 child: SearchInformation(),
+              ),
+            ],
+          ),
+        ),
+                
+              
+            //  Column(
+              //  children: <Widget>[
+                  // Expanded(
+                  //   child: SearchInformation(),
+                  //   ),
+                 
+        //        ],
+        //      ),
+        //      Padding(
+        //       padding: const EdgeInsets.all(20.0),
+        //       child: TextField(
+        //         controller: fieldText,
+        //         decoration: InputDecoration(
+        //           contentPadding: const EdgeInsets.symmetric(
+        //             vertical: 15.0
+        //           ),
+        //           fillColor: Colors.white,
+        //           filled: true,
+        //           border: OutlineInputBorder(
+        //             borderRadius: BorderRadius.circular(30.0),
+        //             borderSide: const BorderSide(width: 0.8)
+        //           ),
+        //           enabledBorder: OutlineInputBorder(
+        //             borderRadius: BorderRadius.circular(30.0),
+        //             borderSide: BorderSide(width: 0.8, color: Theme.of(context).backgroundColor)
+        //           ),
+                  
+        //           hintText: "Search for a lost item",
+        //         prefixIcon: const Icon(Icons.search, size: 30,),
+        //         suffixIcon: IconButton(icon: const Icon(Icons.clear), onPressed: (){
+        //           fieldText.clear();
+        //         })
+        //         ),
+                
+        //       ),
+              //  ],
+             );
+
+    //      ],
+    //    ),
+      
+    // );
+>>>>>>> Stashed changes
     
   }
 }
