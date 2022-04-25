@@ -8,12 +8,21 @@ class SearchInformation extends StatefulWidget {
   _SearchInformationState createState() => _SearchInformationState();
 }
 class _SearchInformationState extends State<SearchInformation> {
-  final Stream<QuerySnapshot> _itemsStream = FirebaseFirestore.instance.collection('items').snapshots();
+  final Stream<QuerySnapshot> _typeStream = FirebaseFirestore.instance.collection('items').snapshots();
+    //late DocumentSnapshot document;
+    // DocumentSnapshot document = _typeStream as DocumentSnapshot<Object?>;
+   // Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+  //  Map<String, dynamic> data = document as Map<String, dynamic>;
+  //           late List <String> types;
+  //           // ignore: unused_local_variable
+            // for (QuerySnapshot snap in _typeStream ){
+              
+            // }
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _itemsStream,
+      stream: _typeStream,
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if (snapshot.hasError) {
           return Text('Something went wrong');
@@ -25,10 +34,8 @@ class _SearchInformationState extends State<SearchInformation> {
 
         return ListView(
           children: snapshot.data!.docs.map((DocumentSnapshot document) {
-            Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
             return ListTile(
-              title: Text(data['name']),
-              subtitle: Text(data['type']),
+              title: Text('text'),
             );
           }).toList(),
         );

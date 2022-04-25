@@ -1,3 +1,9 @@
-2022/04/20-18:21:43.151 41b8 Reusing MANIFEST C:\Users\phita\AppData\Local\Temp\flutter_tools.8a51e43\flutter_tools_chrome_device.390fbcc7\Default\Session Storage/MANIFEST-000001
-2022/04/20-18:21:43.152 41b8 Recovering log #3
-2022/04/20-18:21:43.153 41b8 Reusing old log C:\Users\phita\AppData\Local\Temp\flutter_tools.8a51e43\flutter_tools_chrome_device.390fbcc7\Default\Session Storage/000003.log 
+<<<<<<< Updated upstream
+2022/04/23-15:43:31.953 5303 Reusing MANIFEST /private/var/folders/g8/cmccqlb17q5bqpw6njnrk_k40000gn/T/flutter_tools.JOXyEY/flutter_tools_chrome_device.jqcKqr/Default/Session Storage/MANIFEST-000001
+2022/04/23-15:43:31.954 5303 Recovering log #3
+2022/04/23-15:43:31.954 5303 Reusing old log /private/var/folders/g8/cmccqlb17q5bqpw6njnrk_k40000gn/T/flutter_tools.JOXyEY/flutter_tools_chrome_device.jqcKqr/Default/Session Storage/000003.log 
+=======
+2022/04/15-13:10:32.026 5103 Reusing MANIFEST /private/var/folders/g8/cmccqlb17q5bqpw6njnrk_k40000gn/T/flutter_tools.odyrFb/flutter_tools_chrome_device.zWgdk4/Default/Session Storage/MANIFEST-000001
+2022/04/15-13:10:32.027 5103 Recovering log #3
+2022/04/15-13:10:32.027 5103 Reusing old log /private/var/folders/g8/cmccqlb17q5bqpw6njnrk_k40000gn/T/flutter_tools.odyrFb/flutter_tools_chrome_device.zWgdk4/Default/Session Storage/000003.log 
+>>>>>>> Stashed changes
