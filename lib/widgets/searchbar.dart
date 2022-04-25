@@ -10,14 +10,14 @@ class SearchInformation extends StatefulWidget {
 class _SearchInformationState extends State<SearchInformation> {
   final Stream<QuerySnapshot> _typeStream = FirebaseFirestore.instance.collection('items').snapshots();
     //late DocumentSnapshot document;
-    DocumentSnapshot document = _typeStream as DocumentSnapshot<Object?>;
+    // DocumentSnapshot document = _typeStream as DocumentSnapshot<Object?>;
    // Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
-   Map<String, dynamic> data = document as Map<String, dynamic>;
-            late List <String> types;
-            // ignore: unused_local_variable
-            for (QuerySnapshot snap in _typeStream ){
+  //  Map<String, dynamic> data = document as Map<String, dynamic>;
+  //           late List <String> types;
+  //           // ignore: unused_local_variable
+            // for (QuerySnapshot snap in _typeStream ){
               
-            }
+            // }
 
   @override
   Widget build(BuildContext context) {

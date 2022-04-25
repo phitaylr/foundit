@@ -33,33 +33,49 @@ class _ItemTableState extends State<ItemTable> {
         //     );
         //   }).toList(),
         // );
-        return DataTable(
+           List<DataRow> lostitems = snapshot.data!.docs.map((DocumentSnapshot document) {
+            Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+            return (
+              DataRow(
+              cells:
+              [
+                DataCell(Text(data['name'])),
+                DataCell(Text(data['location'])),
+                DataCell(Text(data['type'])),
+              ]
+              )
+            );
+          }).toList();
+          
 
+        return DataTable(
+          rows: lostitems,
+          
           columns: [
             DataColumn(label: Text("Name")),
             DataColumn(label: Text("Type")),
             DataColumn(label: Text("Location")),
             //DataColumn(label: Text("Description")),
           ],
-          rows: [
-            snapshot.data!.docs.map((DocumentSnapshot document) {
-            Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
-            return DataRow(
-              cells:[
-              DataCell(Text(data['type'])),
-              DataCell(Text(data['type'])),
-              DataCell(Text(data['location'])),
-              ],
+          // rows: [
+          //   snapshot.data!.docs.map((DocumentSnapshot document) {
+          //   Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+          //   return DataRow(
+          //     cells:[
+          //     DataCell(Text(data['type'])),
+          //     DataCell(Text(data['type'])),
+          //     DataCell(Text(data['location'])),
+          //     ],
                
-            );
-          }).toList(),
+          //   );
+          // }).toList(),
             // DataRow(cells: [
             //   DataCell(Text("1")),
             //   DataCell(Text("2")),
             //   DataCell(Text("3")),
             
             // ])
-            ]
+            // ]
         );
       },
     );

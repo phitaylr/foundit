@@ -39,50 +39,6 @@ class _SearchPage extends State<SearchPage> {
           }
           ),
       ),
-<<<<<<< Updated upstream
-        body: Column(
-        children: <Widget>[
-          ListTile(
-           onTap: null,
-          leading: CircleAvatar(
-          backgroundColor: Colors.transparent,
-          ),
-        //   trailing: CircleAvatar(
-        //      backgroundColor: Colors.transparent,
-        //   ),
-          title:Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-             children: <Widget>[
-               Expanded(
-               child: Container(
-                 child: Text("water bottle"),
-                //  decoration: BoxDecoration(
-                //    color: Colors.blue,
-                //  ),
-                 ),
-               ),
-               Expanded(child: Text("keys")),
-               Expanded(child: Text("outer wear")),
-               Expanded(child: Text("shirt")),
-               Expanded(child: Text("pants")),
-               Expanded(child: Text("skirt")),
-               Expanded(child: Text("miscellaneous")),
-             ],
-          ),
-        ),
-        Expanded(
-           child: ItemTable(),
-         ),
-
-        ],
-        ),
-        
-
-    ); 
-        
-        
-=======
        body: Center(
          child: Column(
          mainAxisAlignment: MainAxisAlignment.center,
@@ -115,18 +71,9 @@ class _SearchPage extends State<SearchPage> {
                ),
                ),
               ),
+         
               Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.all(8.0),
-                 scrollDirection: Axis.horizontal,
-                 children: const [
-                   Text('type'),
-               ],
-               ),
-         ),
-              
-              Expanded(
-                 child: SearchInformation(),
+                 child: ItemTable(),
               ),
             ],
           ),
@@ -175,7 +122,6 @@ class _SearchPage extends State<SearchPage> {
     //    ),
       
     // );
->>>>>>> Stashed changes
     
   }
 }
