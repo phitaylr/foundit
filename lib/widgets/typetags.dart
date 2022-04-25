@@ -34,12 +34,61 @@ class _TypeTagsState extends State<TypeTags> {
             );
           }).toSet().toList();
           typetiles = tnames.map((tname) => Text(tname)).toList();
-          return ListView(
-          children: typetiles,
+        return ListView(
+         children: typetiles,
+        //   // onTap: (){
+        //   //   filter = typetiles
+        //   // }
         );
         }
         
       },
     );
   }
-}
+} 
+// class TypeFilter extends StatelessWidget {
+//    @override
+//   Widget build(BuildContext context) {
+//      return
+     
+//       Drawer(
+//        child: ListView(
+//          padding: EdgeInsets.zero,
+//          children: <Widget>[
+//            DrawerHeader(
+//             child: Text(
+//                'Side menu',
+//                style: TextStyle(color: Colors.white, fontSize: 25),
+//              ),
+//              decoration: BoxDecoration(
+//                  color: Colors.lightBlue,
+//                  image: DecorationImage(
+//                     fit: BoxFit.fill,
+//                      image: AssetImage('assets/images/cover.jpg'))),
+//            ),
+//            ListTile(
+//              leading: Icon(Icons.input),
+//             title: Text('Admin'),
+//              onTap: () {
+//                Navigator.pop(context);
+//               Navigator.pushNamed(context, '/admin');
+//              },
+//           ),
+
+//          ],
+//        ),
+//      );
+//    }
+// }
+// class TypeRow extends _TypeTagsState{
+//   @override
+//   Widget build(BuildContext context) {
+//     return Row(
+//       crossAxisAlignment: CrossAxisAlignment.start,
+//       mainAxisAlignment: MainAxisAlignment.spaceAround,
+//       children: <Widget>[
+//         TypeTags(),
+//       ]
+//     );
+//   }
+// }

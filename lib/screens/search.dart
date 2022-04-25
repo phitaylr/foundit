@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:html';
 import 'package:flutter/widgets.dart';
 import 'package:foundit/widgets/items.dart';
+import 'package:foundit/widgets/itemstable.dart';
 import 'package:foundit/widgets/mainmenu.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -37,17 +38,48 @@ class _SearchPage extends State<SearchPage> {
           }
           ),
       ),
-        body: Center(
-         child: Column(
-         mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Expanded(
-                 child: TypeTags(),
-              )
-            ],
+        body: Column(
+        children: <Widget>[
+          ListTile(
+           onTap: null,
+          leading: CircleAvatar(
+          backgroundColor: Colors.transparent,
+          ),
+        //   trailing: CircleAvatar(
+        //      backgroundColor: Colors.transparent,
+        //   ),
+          title:Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+             children: <Widget>[
+               Expanded(
+               child: Container(
+                 child: Text("water bottle"),
+                //  decoration: BoxDecoration(
+                //    color: Colors.blue,
+                //  ),
+                 ),
+               ),
+               Expanded(child: Text("keys")),
+               Expanded(child: Text("outer wear")),
+               Expanded(child: Text("shirt")),
+               Expanded(child: Text("pants")),
+               Expanded(child: Text("skirt")),
+               Expanded(child: Text("miscellaneous")),
+             ],
           ),
         ),
-    );
+        Expanded(
+           child: ItemTable(),
+         ),
+
+        ],
+        ),
+        
+
+    ); 
+        
+        
     
   }
 }
